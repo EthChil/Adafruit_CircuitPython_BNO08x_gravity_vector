@@ -602,7 +602,6 @@ class BNO08X:  # pylint: disable=too-many-instance-attributes, too-many-public-m
         except KeyError:
             raise RuntimeError("No gravity report found, is it enabled?") from None
 
-
     @property
     def gyro(self):
         """A tuple representing Gyro's rotation measurements on the X, Y, and Z
